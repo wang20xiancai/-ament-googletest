@@ -15,6 +15,8 @@ include_directories(
 add_library(gmock STATIC
   ${gtest_vendor_BASE_DIR}/src/gtest-all.cc
   src/gmock-all.cc)
+set(THREAD_LIBS ${CMAKE_THREAD_LIBS_INIT})
+
 # When building with asan (i.e. using colcon build --mixin asan-gcc),
 # asan itself provides a "fake" pthread that tricks the pthread
 # detection logic into thinking no link libraries are necessary
@@ -22,10 +24,9 @@ add_library(gmock STATIC
 # for some additional information).  To work around that, we unconditionally
 # add the -pthread flag for Linux machines so it will always work
 if(UNIX AND NOT APPLE)
-  target_link_libraries(gmock ${CMAKE_THREAD_LIBS_INIT} -pthread)
-else()
-  target_link_libraries(gmock ${CMAKE_THREAD_LIBS_INIT})
+  list(APPEND THREAD_LIBS "-pthread")
 endif()
+target_link_libraries(gmock ${THREAD_LIBS})
 if(NOT WIN32)
   set_target_properties(gmock PROPERTIES COMPILE_FLAGS "-Wno-missing-field-initializers")
 endif()
