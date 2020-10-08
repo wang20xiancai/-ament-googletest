@@ -10,8 +10,9 @@
   -->
   <version>1.8.9000</version>
   <description>The package provides GoogleMock.</description>
-  <maintainer email="dthomas@osrfoundation.org">Dirk Thomas</maintainer>
+  <maintainer email="michel@ekumenlabs.com">Michel Hidalgo</maintainer>
   <license>BSD</license>
+  <author email="dthomas@osrfoundation.org">Dirk Thomas</author>
 
   <build_depend>cmake</build_depend>
 
