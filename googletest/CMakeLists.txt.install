@@ -20,6 +20,7 @@ endif()
 
 if(NOT WIN32)
   set_target_properties(gtest PROPERTIES COMPILE_FLAGS "-Wno-missing-field-initializers")
+  set_target_properties(gtest PROPERTIES POSITION_INDEPENDENT_CODE True)
 endif()
 
 add_library(gtest_main STATIC src/gtest_main.cc)
