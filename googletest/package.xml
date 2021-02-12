@@ -32,7 +32,7 @@
   1.8.9000 = google/googletest@c6cb7e033591528a5fe2c63157a0d8ce927740dc + osrf commits
   1.10.9000 = google/googletest@703bd9caab50b139428cea1aaff9974ebee5742e + osrf commits
   -->
-  <version>1.10.9001</version>
+  <version>1.10.9002</version>
   <description>The package provides GoogleTest.</description>
   <maintainer email="michel@ekumenlabs.com">Michel Hidalgo</maintainer>
   <license>BSD</license>
