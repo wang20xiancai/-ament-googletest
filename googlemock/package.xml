@@ -12,10 +12,11 @@
   <version>1.10.9004</version>
   <description>The package provides GoogleMock.</description>
 
-  <maintainer email="audrow@openrobotics.org">Audrow Nash</maintainer>
+  <maintainer email="scott@openrobotics.org">Scott K Logan</maintainer>
 
   <license>BSD</license>
 
+  <author email="audrow@openrobotics.org">Audrow Nash</author>
   <author email="dthomas@osrfoundation.org">Dirk Thomas</author>
   <author email="michel@ekumenlabs.com">Michel Hidalgo</author>
 
