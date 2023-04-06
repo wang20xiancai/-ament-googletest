@@ -42,7 +42,7 @@
   <author email="dthomas@osrfoundation.org">Dirk Thomas</author>
   <author email="michel@ekumenlabs.com">Michel Hidalgo</author>
 
-  <build_depend>cmake</build_depend>
+  <buildtool_depend>cmake</buildtool_depend>
 
   <export>
     <build_type>cmake</build_type>
