@@ -12,14 +12,15 @@
   <version>1.11.9000</version>
   <description>The package provides GoogleMock.</description>
 
-  <maintainer email="audrow@openrobotics.org">Audrow Nash</maintainer>
+  <maintainer email="scott@openrobotics.org">Scott K Logan</maintainer>
 
   <license>BSD</license>
 
+  <author email="audrow@openrobotics.org">Audrow Nash</author>
   <author email="dthomas@osrfoundation.org">Dirk Thomas</author>
   <author email="michel@ekumenlabs.com">Michel Hidalgo</author>
 
-  <build_depend>cmake</build_depend>
+  <buildtool_depend>cmake</buildtool_depend>
 
   <build_export_depend>gtest_vendor</build_export_depend>
 
